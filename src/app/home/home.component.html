@@ -1,0 +1,127 @@
+<div class="parallex d-flex">
+    <img class="w-100" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/18/d3bbed77-55c3-41b4-af48-6acce1fad7521705586125476-DESKTOP-HP-BANNER-----2_01.jpg" alt="">
+   <img class="w-100" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/18/98840514-ffc0-479b-8fa3-560862fc3aa81705586125482-DESKTOP-HP-BANNER-----2_02.jpg" alt="">  
+</div>
+
+<ngb-carousel *ngIf="popularProducts">
+    <ng-template  *ngFor="let item of popularProducts" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/details/{{item.id}}"> <img class="product-header-image" src="{{item.image}}" alt="Random first slide">
+     </a>
+        </div>
+      <div class="carousel-caption">
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+<div class="product-list-wrapper">
+<h1>Trendy Products</h1>
+<!-- <div class="row">
+  <div class="col-sm-3" *ngFor="let item of trendyProducts">
+    <div class="product-item">
+      <img src="{{item.image}}" alt="">
+    <div class="product-details">
+      <h6 class="name-head">{{item.name}}</h6>
+      <div class="product-price">
+        <h6>Price:{{item.price}}</h6>
+      </div>
+      <div class="product-color">
+        <h6>Color:{{item.color}}</h6>
+      </div>
+    </div>
+    <div class="product-footer">
+      <a routerLink="/details/{{item.id}}">View Details</a>
+      <a href="">Add to Cart</a>
+
+    </div>
+    </div>
+  </div>
+
+
+</div> -->
+</div>
+
+  
+<div class="cards">
+ 
+  <div class="product-card" *ngFor="let item of trendyProducts">
+    <div class="badge">Hot</div>
+    <div class="product-tumb">
+      <img src="{{item.image}}" alt="">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">{{item.name}}</span>
+      <h4><a href="">{{item.name}}</a></h4>
+
+      <div class="product-bottom-details">
+        <div class="product-price">Price:{{item.price}}9</div>
+        <div class="product-links">
+          <a routerLink="/details/{{item.id}}">View Details</a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="product-card">
+    <div class="badge">Hot</div>
+    <div class="product-tumb">
+      <img src="https://i.imgur.com/xdbHo4E.png" alt="">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">Women,bag</span>
+      <h4><a href="">Women leather bag</a></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+      <div class="product-bottom-details">
+        <div class="product-price"><small>$96.00</small>$230.99</div>
+        <div class="product-links">
+          <a href=""><i class="fa fa-heart"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="product-card">
+    <div class="badge">Hot</div>
+    <div class="product-tumb">
+      <img src="https://i.imgur.com/xdbHo4E.png" alt="">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">Women,bag</span>
+      <h4><a href="">Women leather bag</a></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+      <div class="product-bottom-details">
+        <div class="product-price"><small>$96.00</small>$230.99</div>
+        <div class="product-links">
+          <a href=""><i class="fa fa-heart"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<div class="top d-flex pt-lg-5">
+  <div class="item">
+    <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/5/19b9c34c-fbda-444a-a2f7-46905fddec921704456622455-Campus-_Bata_Starting_499_-999-.png" alt="">
+  </div>
+  <div class="item">
+    <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/5/8185bdd0-72ca-4317-a4c3-14f16f5792451704456622342-Boohoo.png" alt="">
+  </div>
+  <div class="item">
+    <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/5/f6e58493-fbd0-447a-83c9-b52fd1c58dae1704456622259-Soch-_Inddus_-_more.png" alt="">
+  </div>
+  <div class="item">
+    <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/5/fecaab01-c5d6-4f92-ad85-ca5ea014aa961704456622500-Anouk-_DB_Min_65.png" alt="">
+  </div>
+</div>
+
+<div class="coup">
+  <img class="w-100" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/18/1e1b0d8d-d87a-4e60-a7e0-0a6a722c61931705586238020-COUPONS-CORNER-----2.jpg" alt="">
+  <div class="top d-flex pt-lg-5 ">
+    <div class="coupen"><img class="w-100" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/10/a87f25b1-35a6-412d-ba30-af98380c8a0a1704896447370-MYNTRA100-----2.jpg" alt=""></div>
+    <div class="coupen"><img class="w-100" src="https://assets.myntassets.com/f_webp,w_490,c_limit,fl_progressive,dpr_2.0/assets/images/2024/1/10/d13a5b21-151e-4fef-a149-e2b59c89ecad1704896447382-MYNTRA200-----3.jpg" alt=""></div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="row product-details" *ngIf="productData">
+    <div class="col-sm-6">
+        <img  class="product-img" src="{{productData.image}}" alt="">
+    </div>
+<div class="col-sm-6">
+    <div class="details">
+        <h1>{{productData.name}}</h1>
+        <h3>Price : {{productData.price}}</h3>
+        <div>Color :<h3 [style.backgroundColor]="productData.color" class="product-color"></h3></div>
+        <h6>Category : {{productData.category}}</h6>
+        <h6>Description : {{productData.description}}</h6>
+        <button class="form-button">Buy Now</button>
+        <button *ngIf="removeCart" class="form-button" (click)=" removeToCart(productData.id)">Remove to Cart</button>
+        <button *ngIf="!removeCart" class="form-button" (click)="addToCart()">Add to Cart</button>
+        <div class="quantity-group">
+            <button (click)="handleQuantity('min')" >-</button>
+            <input type="text" value="{{productQuantity}}" />
+            <button (click)="handleQuantity('plus')">+</button>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="product-card" *ngIf="productData">
+    <div class="image-container">
+      <div class="cover-image product-image">
+        <img loading="lazy" src="{{productData.image}}" alt="">
+      </div>
+      <div class="more-image-container">
+        <div class="more-image product-image">
+          <img src="{{productData.image}}" alt="">
+        </div>
+        <div class="more-image product-image">
+          <img src="{{productData.image}}" alt="">
+        </div>
+        <div class="more-image product-image">
+          <img src="{{productData.image}}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="product-info">
+      <a href="#" class="free-shipping">Free shipping</a>
+      <h3 class="product-name">{{productData.name}}</h3>
+      <p class="regular-price">Rs. {{productData.price}}</p>
+      <p class="discount-price">Rs. {{productData.price}}</p>
+      <p class="offer-info">{{productData.description}}</p>
+      <a href="#" class="add-to-cart">
+     Buy Now
+      </a>
+      <div class="stock">
+        <div class="stock-status"></div>
+        <p class="stock-info">50+ pcs. in stock.</p>
+      </div>
+      <div class="buttons">
+        <button *ngIf="removeCart" class="form-button-2 " (click)=" removeToCart(productData.id)">Remove to Cart</button>
+        <button *ngIf="!removeCart" class="form-button-2" (click)="addToCart()">Add to Cart</button>
+        <a href="#" class="button">
+          Add to wishlist
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

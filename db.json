@@ -1,0 +1,67 @@
+{
+  "seller": [
+    {
+      "name": "Shubham",
+      "email": "shubham@seller.com",
+      "password": "abc@123",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 2
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": 3
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": 4
+    },
+    {
+      "name": "Apple Series 9",
+      "price": "79,999",
+      "category": "Watch",
+      "color": "Rose Gold",
+      "description": "Very expensive watch you every seen in your life.",
+      "image": "https://m.media-amazon.com/images/I/618-Lv9cS+L.jpg",
+      "id": 5
+    },
+    {
+      "name": "MRF English WIllow Bat",
+      "price": "1,500",
+      "category": "Sports",
+      "color": "White",
+      "description": "AARAV mrf Kashmir Willow Cricket Bat Full Cane with Bat Cover for Leather Ball | Premium Cricket Bat | Professional Cricket Bat | Leather Bat | mrf Bat | Harrow Size Bat | Light Weight Bat",
+      "image": "https://m.media-amazon.com/images/I/619dBlEp2yL._SX679_.jpg",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "Shubham",
+      "email": "user@user.com",
+      "password": "abc@123",
+      "id": 1
+    }
+  ],
+  "cart": [],
+  "orders": []
+}
